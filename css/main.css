@@ -10,7 +10,8 @@
 }
 
 .page {
-  background-image: url(../images/group-2_2018-11-16/group-2@2x.png);
+  height: 100%;
+  background-image: url(../assets/images/group-2_2018-11-16/group-2@2x.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -34,7 +35,7 @@
 }
 
 .main__image {
-  background-image: url(../images/phones-mobile_2017-01-25/phones-mobile@3x.png);
+  background-image: url(../assets/images/phones-mobile_2017-01-25/phones-mobile@3x.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
