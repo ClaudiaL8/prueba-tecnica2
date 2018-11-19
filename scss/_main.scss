@@ -13,7 +13,7 @@
 }
 
 .main__image {
-  background-image: url('../assets/images/phones-mobile_2017-01-25/phones-mobile@3x.png');
+  background-image: url("../assets/images/phones-mobile_2017-01-25/phones-mobile@3x.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,10 +97,11 @@
   }
 
   .main__image {
-    background-image: url('../assets/images/iphones-final_2017-01-25/iphones-final.png');
+    margin-top: 38px;
+    background-image: url("../assets/images/iphones-final_2017-01-25/iphones-final.png");
     background-size: cover;
-    width: 374px;
-    height: 732px;
+    width: 269px;
+    height: 531px;
   }
 
   .main__text {
@@ -111,22 +112,61 @@
   .logo {
     position: static;
     align-self: flex-start;
-    width: 183px;
-    height: 58px;
+    width: 149px;
+    height: 50px;
   }
 
   .text__title {
     text-align: left;
     width: 584px;
-    font-size: 42px;
+    font-size: 28px;
     line-height: 1.14em;
   }
 
   .text__paragraph {
     text-align: left;
     width: 585px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.42em;
+  }
+
+  .text__input {
+    width: 240px;
+    height: 39px;
+  }
+
+  .text__button {
+    width: 100px;
+    height: 39px;
+  }
+}
+@media all and (min-width: 1400px) {
+  .page__main {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main__image {
+    width: 374px;
+    height: 732px;
+  }
+
+  .main__text {
+    margin-left: 5%;
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 183px;
+    height: 58px;
+  }
+
+  .text__title {
+    font-size: 42px;
+  }
+
+  .text__paragraph {
+    font-size: 24px;
   }
 
   .text__input {

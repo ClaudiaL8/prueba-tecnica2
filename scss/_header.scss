@@ -6,6 +6,20 @@
   .page__header {
     display: flex;
     justify-content: flex-end;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 30px 40px 2px 0;
+  }
+
+  .fa-twitter {
+    margin-left: 10px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .page__header {
+    display: flex;
+    justify-content: flex-end;
     font-size: 32px;
     color: #ffffff;
     padding: 40px 40px 2px 0;

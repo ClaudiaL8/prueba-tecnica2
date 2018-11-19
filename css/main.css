@@ -6,6 +6,19 @@
   .page__header {
     display: flex;
     justify-content: flex-end;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 30px 40px 2px 0;
+  }
+
+  .fa-twitter {
+    margin-left: 10px;
+  }
+}
+@media all and (min-width: 1400px) {
+  .page__header {
+    display: flex;
+    justify-content: flex-end;
     font-size: 32px;
     color: #ffffff;
     padding: 40px 40px 2px 0;
@@ -114,10 +127,11 @@
   }
 
   .main__image {
+    margin-top: 38px;
     background-image: url("../assets/images/iphones-final_2017-01-25/iphones-final.png");
     background-size: cover;
-    width: 374px;
-    height: 732px;
+    width: 269px;
+    height: 531px;
   }
 
   .main__text {
@@ -128,22 +142,61 @@
   .logo {
     position: static;
     align-self: flex-start;
-    width: 183px;
-    height: 58px;
+    width: 149px;
+    height: 50px;
   }
 
   .text__title {
     text-align: left;
     width: 584px;
-    font-size: 42px;
+    font-size: 28px;
     line-height: 1.14em;
   }
 
   .text__paragraph {
     text-align: left;
     width: 585px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.42em;
+  }
+
+  .text__input {
+    width: 240px;
+    height: 39px;
+  }
+
+  .text__button {
+    width: 100px;
+    height: 39px;
+  }
+}
+@media all and (min-width: 1400px) {
+  .page__main {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main__image {
+    width: 374px;
+    height: 732px;
+  }
+
+  .main__text {
+    margin-left: 5%;
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 183px;
+    height: 58px;
+  }
+
+  .text__title {
+    font-size: 42px;
+  }
+
+  .text__paragraph {
+    font-size: 24px;
   }
 
   .text__input {
@@ -180,6 +233,11 @@
   .page {
     background-image: url("../assets/images/group-2_2018-11-16/group-2.png");
     padding: 0;
+    height: 592px;
+  }
+}
+@media all and (min-width: 1400px) {
+  .page {
     height: 759px;
   }
 }
