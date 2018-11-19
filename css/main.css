@@ -59,7 +59,12 @@
   align-items: center;
 }
 
+.text__title:before {
+  content: attr(data-phonetext);
+}
+
 .text__title {
+  font-weight: 300;
   margin-bottom: 9px;
   width: 280px;
   font-family: "SegoeUI";
@@ -73,7 +78,12 @@
   color: #ffffff;
 }
 
+.text__paragraph:before {
+  content: attr(data-phonetext);
+}
+
 .text__paragraph {
+  font-weight: 400;
   margin-bottom: 26px;
   width: 280px;
   opacity: 0.7;
@@ -100,6 +110,8 @@
   background-color: #ffffff;
   border: 0;
   padding: 10px 11px 11px 11px;
+  color: #9fa3a7;
+  font-weight: 400;
 }
 
 .text__button {
@@ -109,7 +121,7 @@
   background-color: #f05638;
   border: 0;
   font-family: "SegoeUI";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -146,11 +158,19 @@
     height: 50px;
   }
 
+  .text__title:before {
+    content: attr(data-desktoptext);
+  }
+
   .text__title {
     text-align: left;
     width: 584px;
     font-size: 28px;
     line-height: 1.14em;
+  }
+
+  .text__paragraph:before {
+    content: attr(data-desktoptext);
   }
 
   .text__paragraph {
@@ -166,6 +186,7 @@
   }
 
   .text__button {
+    font-size: 14px;
     width: 100px;
     height: 39px;
   }
@@ -209,6 +230,24 @@
     height: 55px;
   }
 }
+@font-face {
+  font-family: "SegoeUI";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../assets/fonts/Segoe/Regular.woff);
+}
+@font-face {
+  font-family: "SegoeUI";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../assets/fonts/Segoe/Light.woff);
+}
+@font-face {
+  font-family: "SegoeUI";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../assets/fonts/Segoe/Bold.woff);
+}
 * {
   margin: 0;
   padding: 0;
@@ -218,6 +257,7 @@
 .body {
   width: 100vw;
   height: 100vh;
+  font-family: "SegoeUI", sans-serif;
 }
 
 .page {

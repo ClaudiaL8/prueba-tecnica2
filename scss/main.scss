@@ -1,6 +1,27 @@
 @import "_header.scss";
 @import "_main.scss";
 
+@font-face {
+  font-family: 'SegoeUI';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(../assets/fonts/Segoe/Regular.woff);
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  font-style: normal;
+  font-weight: 300;
+  src:  url(../assets/fonts/Segoe/Light.woff);
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  font-style: normal;
+  font-weight: 700;
+  src:  url(../assets/fonts/Segoe/Bold.woff);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +31,7 @@
 .body {
   width: 100vw;
   height: 100vh;
+  font-family: 'SegoeUI', sans-serif;
 }
 
 .page {
