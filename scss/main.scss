@@ -1,3 +1,6 @@
+@import "_header.scss";
+@import "_main.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -11,105 +14,17 @@
 
 .page {
   height: 100%;
-  background-image: url(../assets/images/group-2_2018-11-16/group-2@2x.png);
+  background-image: url('../assets/images/group-2_2018-11-16/group-2@2x.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 35px 10px 58px 10px;
+  padding: 90px 10px 58px 10px;
 }
 
-.page__header {
-  display: none;
-}
-
-.page__main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  width: 116px;
-  height: 37px;
-  margin-bottom: 19px;
-}
-
-.main__image {
-  background-image: url(../assets/images/phones-mobile_2017-01-25/phones-mobile@3x.png);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 300px;
-  height: 185px;
-  margin-bottom: 22px;
-}
-
-.main__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.text__title {
-  margin-bottom: 9px;
-  width: 280px;
-  height: 84px;
-  font-family: 'SegoeUI';
-  font-size: 24px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.17;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
-
-.text__paragraph {
-  margin-bottom: 26px;
-  width: 280px;
-  height: 48px;
-  opacity: 0.7;
-  font-family: 'SegoeUI';
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.text__input__button {
-  display: flex;
-  justify-content: center;
-}
-
-.text__input {
-  width: 188px;
-  height: 45px;
-  border-radius: 8px 0 0 8px;
-  background-color: #ffffff;
-  border: 0;
-  padding: 10px 11px 11px 11px;
-}
-
-.text__button {
-  width: 92px;
-  height: 45px;
-  border-radius: 0 8px 8px 0;
-  background-color: #f05638;
-  border: 0;
-  font-family: 'SegoeUI';
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 2.8px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
+@media all and (min-width: 1024px) {
+  .page {
+    background-image: url('../assets/images/group-2_2018-11-16/group-2.png');
+    padding: 0;
+    height: 759px;
+  }
 }
