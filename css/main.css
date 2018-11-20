@@ -49,6 +49,12 @@
   background-size: cover;
   width: 300px;
   height: 185px;
+}
+
+.line {
+  width: 300px;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 49%, rgba(255, 255, 255, 0));
   margin-bottom: 22px;
 }
 
@@ -144,6 +150,10 @@
     background-size: cover;
     width: 269px;
     height: 531px;
+  }
+
+  .line {
+    display: none;
   }
 
   .main__text {
@@ -255,14 +265,11 @@
 }
 
 .body {
-  width: 100vw;
-  height: 100vh;
   font-family: "SegoeUI", sans-serif;
+  background-image: url("../assets/images/group-2_2018-11-16/group-2@2x.png");
 }
 
 .page {
-  height: 100%;
-  background-image: url("../assets/images/group-2_2018-11-16/group-2@2x.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -270,15 +277,20 @@
 }
 
 @media all and (min-width: 1024px) {
+  .body {
+    height: 100vh;
+    background-image: none;
+  }
+
   .page {
     background-image: url("../assets/images/group-2_2018-11-16/group-2.png");
     padding: 0;
-    height: 592px;
+    height: 600px;
   }
 }
 @media all and (min-width: 1400px) {
   .page {
-    height: 759px;
+    height: 810px;
   }
 }
 
